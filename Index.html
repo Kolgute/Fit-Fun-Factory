@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/ddd8df2b57.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<div class="icon">
+				<a href=""><img src="1.png" style="width: 125px; padding-top: 5px;" alt=""></a>
+				<div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+					<p class="logo-p" style="color:black;">Fit</p>
+					<p class="logo-p" style="color:red;">Fun</p>
+					<p class="logo-p" style="background: linear-gradient(45deg, red 50%, black 50%); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">Factory</p>
+				</div>
+			</div>
+			<div class="buttons">
+				<a href="#about">О НАС</a>
+				<a href="#service">НАШИ ПРЕДЛОЖЕНИЯ</a>
+				<a href="#footer">КОНТАКТЫ</a>
+				<a onclick="Openslider('slide-menu','slide-visible')" style="cursor: pointer;">Все блоки</a>
+			</div>
+		</div>
+		<div class="slide-menu" >
+			<div style="display: flex;">
+				<a onclick="Closeslider('slide-menu','slide-visible')" href="#about" class="slide-menua">О НАС</a>
+				<p onclick="Closeslider('slide-menu','slide-visible')" align="end" style="color: white;font-size: 30px;cursor: pointer; position: absolute; right: 15px;">&#xD7</p>
+			</div>
+			<a onclick="Closeslider('slide-menu','slide-visible')" href="#service" class="slide-menua">НАШИ ПРЕДЛОЖЕНИЯ</a>
+			<a onclick="Closeslider('slide-menu','slide-visible')" href="#advantages" class="slide-menua">ПОЛЬЗА ТРЕНИРОВОК</a>
+			<a onclick="Closeslider('slide-menu','slide-visible')" href="#our-classes" class="slide-menua">НАШИ ЗАНЯТИЯ</a>
+			<a onclick="Closeslider('slide-menu','slide-visible')" href="#our-images" class="slide-menua">ГАЛЕРЕЯ</a>
+			<a onclick="Closeslider('slide-menu','slide-visible')" href="#our-principing" class="slide-menua">ЦЕНЫ</a>
+		</div>
+	</header>
+	<div id="home" class="home">
+		<span class="home-span">ТЕЛО ДОСТИГАЕТ ТОГО ВО ЧТО ВЫ ВЕРИТЕ</span>
+		<a style="margin-top: 40px;">
+			<span class="spbutton" onclick="Openslider('modal','in')" >Записаться</span>
+		</a>
+	</div>
+	<div id="about" class="about">
+		<div class="us">
+			<span class="spanh1 f60">О нас</span>
+			<span class="spanh2" style="color: red;font-weight: 700;">МЕСТО ДЛЯ ИСПОЛНЕНИЯ ТВОЕЙ ЦЕЛИ</span>
+			<span class="spanh2"> «Физкультурно-оздоровительный клуб «Три Ф» работает с 2003 года. В 2007 году клуб стал дипломантом, а по итогам 2008 – 2011 г.г. – победителем в конкурсе «Лучший предприниматель в сфере оказания физкультурно-оздоровительных услуг по Могилевской области». Фитнес «Три Ф» является неоднократным победителем и призером областных и республиканских соревнований Республики Беларусь по оздоровительной аэробике. Клубом ежегодно проводятся многочисленные акции по популяризации здорового образа жизни (фитнес конвенции, презентации и др.) для жителей г. Могилева. С 2006 по 2011 года – участник международных фитнес-конвенций, проводимых в г. Москве, а с 2012 года по 2018– в Италии.</span>
+		</div>
+		<div class="prev">
+			<a href="">
+			<span>Запустить видео</span>
+			</a>
+		</div>
+	</div>
+	<div id="service" class="service">
+		<div class="services">
+			<img src="mt-1821-img03.jpg" alt="">
+			<div class="info">
+				<span class="spanh1">СИЛЬВЫЕ ТАНЦЫ</span>
+				<div class="lbd">
+					<span style="border-left: 1px solid red"></span>
+					<span class="spanh2" style="color: #cfd8dc;">Для тех, кто любит совмещать полезное с приятным. Танцуя, вы работаете над своим телом.</span>
+				</div>
+				<a ><span class="span-button" onclick="Openslider('modal','in')">Записаться</span></a>
+			</div>	
+		</div>
+		<div class="services">
+			<img src="mt-1821-img04.jpg" alt="">
+			<div class="info">
+				<span class="spanh1">СИЛОВЫЕ ТРЕНИНГИ</span>
+				<div class="lbd">
+					<span style="border-left: 1px solid red"></span>
+					<span class="spanh2" style="color: #cfd8dc;">Кому надоел шейпинг, кого не устраивает классическая аэробика, это для вас</span>
+				</div>
+				<a><span  class="span-button" onclick="Openslider('modal','in')">Записаться</span></a>
+			</div>	
+		</div>
+		<div class="services">
+			<img src="mt-1821-img05.jpg" alt="">
+			<div class="info">
+				<span class="spanh1">ТАНЦЕВАЛЬНЫЕ НАПРАВЛЕНИЯ</span>
+				<div class="lbd">
+					<span style="border-left: 1px solid red"></span>
+					<span class="spanh2" style="color: #cfd8dc;">Развивают умение красиво танцевать под разнличное музыкальное сопровождения</span>
+				</div>
+				<a><span  class="span-button" onclick="Openslider('modal','in')">Записаться</span></a>
+			</div>	
+		</div>
+	</div>
+	<div id="advantages" class="advantages">
+		<div class="blocks">
+			<div class="block">
+				<p style="padding-bottom: 20px;">
+					<span>
+						<span class="content-image">
+							<img src="mt-1821-icon01.png" alt="">
+						</span>
+					</span>
+				</p>
+				<a href="">ФУНКЦИОНАЛЬНЫЕ ТРЕНИРОВКИ</a>
+				<span class="block-text">Получите 100% выгоды от универсальных тренеровок.</span>
+				
+			</div>
+			<div class="block">
+				<p style="padding-bottom: 20px;">
+					<span>
+						<span class="content-image">
+							<img src="mt-1821-icon01.png" alt="">
+						</span>
+					</span>
+				</p>
+				<a href="">КАРДИО ТРЕНИРОВКИ</a>
+				<span class="block-text">Улучшите свое здоровье и выносливость</span>
+				
+			</div>
+			<div class="block">
+				<p style="padding-bottom: 20px;">
+					<span>
+						<span class="content-image">
+							<img src="mt-1821-icon01.png" alt="">
+						</span>
+					</span>
+				</p>
+				<a href="">ПЕРСОНАЛЬНЫЕ ЗАНЯТИЯ</a>
+				<span class="block-text">Рядом с вами всегда будет личный тренер, который научит и подскажет</span>
+				
+				</div>
+			<div class="block">
+				<p style="padding-bottom: 20px;">
+					<span>
+						<span class="content-image">
+							<img src="mt-1821-icon01.png" alt="">
+						</span>
+					</span>
+				</p>
+				<a href="">СТАТЬ ЛУЧШЕ</a>
+				<span class="block-text">Наши тренировки помогут вам стать лучше</span>
+				
+			</div>
+			<div class="block">
+				<p style="padding-bottom: 20px;">
+					<span>
+						<span class="content-image">
+							<img src="mt-1821-icon01.png" alt="">
+						</span>
+					</span>
+				</p>
+				<a href="">ЭСТЕТИКА ТЕЛА</a>
+				<span class="block-text">Наши тренировки сделают ваше тело не только выносливым, но и красивым.</span>
+				
+			</div>
+			<div class="block">
+				<p style="padding-bottom: 20px;">
+					<span>
+						<span class="content-image">
+							<img src="mt-1821-icon01.png" alt="">
+						</span>
+					</span>
+				</p>
+				<a href="">ПРАВИЛЬНОЕ ПИТАНИЕ</a>
+				<span class="block-text">Вы узнаете обо всех принципах здорового спортивного питания.</span>
+				
+			</div>
+		</div>
+	</div>
+	<div id="our-classes" class="our-classes">
+		<span class="spanh1 f60">
+			НАШИ ЗАНЯТИЯ
+		</span>
+		<span class="spanh2" style="color: gray;width:75%;margin-top: 35px;">			
+			Занятия проводятся по заранее составленному рассписанию. Необходимо лишь записаться к нам и ожидать ответа от вашего тренера.
+			<a class ="classes-button">Рассписание можно узнать сдесь</a>
+		</span>
+		<div class="our-classes-img-blocks">
+			
+			<div class="our-classes-img-block">
+				<img src="mt-1821-img14.jpg" alt="">
+				<div class="our-classes-img-block-text">
+					<span class="spanh1" style="font-size: 25px;">ПСИХОЛОГИЯ ОБУЧЕНИЯ</span>
+				</div>
+			</div>
+			<div class="our-classes-img-block">
+				<img src="mt-1821-img15.jpg" alt="">
+				<div class="our-classes-img-block-text">
+					<span class="spanh1" style="font-size: 25px;">ПРАКТИЧЕСКОЕ ПРИМЕНЕНИЕ</span>
+				</div>
+			</div>
+			<div class="our-classes-img-block">
+				<img src="mt-1821-img16.jpg" alt="">
+				<div class="our-classes-img-block-text">
+					<span class="spanh1" style="font-size: 25px;">ФИТНЕС ДЛЯ ДЕВУШЕК</span>
+				</div>
+			</div>
+			<div class="our-classes-img-block">
+				<img src="mt-1821-img17.jpg" alt="">
+				<div class="our-classes-img-block-text">
+					<span class="spanh1" style="font-size: 25px;">СИЛОВЫЕ УПРАЖНЕНИЯ</span>
+				</div>
+			</div>
+			<div class="our-classes-img-block">
+				<img src="mt-1821-img18.jpg" alt="">
+				<div class="our-classes-img-block-text">
+					<span class="spanh1" style="font-size: 25px;">БОКС ДЛЯ ДЕВУШЕК</span>
+				</div>
+			</div>
+			<div class="our-classes-img-block" >
+				<img src="mt-1821-img19.jpg" alt="">
+				<div class="our-classes-img-block-text">
+					<span class="spanh1" style="font-size: 25px;">ЙОГА</span>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div id="our-images" class="our-images">
+		<div class="our-images-block">
+			<div class="our-images-block-item" style="height: 35%;" onclick="Openslider('modal-img','in')">
+				<img src="1/mt-1821-gallery-img01bg.jpg" alt="" class="our-images-block-item-properties">
+			</div>
+			<div class="our-images-block-item" style="height: 65%" onclick="Openslider('modal-img','in')">
+				<img src="1/mt-1821-gallery-img04bg.jpg" alt="" class="our-images-block-item-properties">
+			</div>
+			<div class="our-images-block-item" style="height: 50%" onclick="Openslider('modal-img','in')">
+				<img src="1/mt-1821-gallery-img02bg.jpg" alt="" class="our-images-block-item-properties">
+			</div>
+			<div class="our-images-block-item" style="height: 50%" onclick="Openslider('modal-img','in')">
+				<img src="1/mt-1821-gallery-img05bg.jpg" alt="" class="our-images-block-item-properties">
+			</div>
+			
+			<div class="our-images-block-item" style="height: 60%" onclick="Openslider('modal-img','in')">
+				<img src="1/mt-1821-gallery-img03bg.jpg" alt="" class="our-images-block-item-properties">
+			</div>
+			<div class="our-images-block-item" style="height: 40%" onclick="Openslider('modal-img','in')">
+				<img src="1/mt-1821-gallery-img06bg.jpg" alt="" class="our-images-block-item-properties">
+			</div>
+		</div>
+	</div>
+	<div id="our-principing" class="our-principing">
+		<span class="spanh1 f60">
+			ПОЛИТИКА ЦЕН
+		</span>
+		<span class="spanh2" style="color: gray;width:75%;font-weight: 100;">
+Будьте активны, здоровы и счастливы с нашими уникальными программами для тела и души. Помните, единственная плохая тренировка - это та, которую вы не делали!
+		</span>
+		<div class="our-principing-img-block">
+			<div class="our-principing-img">
+				<div class="principing-img" style="background-image: url(mt-1821-img12.jpg)">
+					<div class="principing-img-text">
+						<span class="spanh1" style="text-align: left;">ДЛЯ ДЕВУШЕК</span>
+						<span class="spanh2" style="color: #d7272a;font-size: 26px;font-style: italic;text-align: left;">ЕЖЕМЕСЯЧНАЯ ОПЛАТА</span>
+						<span class="spanh2" style="text-align: left;color: white;">Независимо от того, посещаете ли вы до нас занятия  фитнесом, мы поможем улучшить ваше здоровье и самочувствие в нашем фитнес клубе. Будьте то девушкой, которая побуждает всех остальных стараться чуть сильнее.</span>
+						<span class="spanh2" style="text-align: left;color: white; font-weight: bold;margin-top: 25px;">Мы предлагаем различные программы по конкурентоспособной цене:</span>
+						<ol>
+							<li>
+								<span class="spanh2" style="color: white;">Повысьте гибкость суставов и мышц с нашими занятиями.</span>
+							</li>
+							<li>
+								<span class="spanh2" style="color: white;">Наслаждайтесь проверенными тренировками, чтобы расширить свои возможности.</span>
+							</li>
+							<li>
+								<span class="spanh2" style="color: white;">У нас есть проверенный временем подход для каждого занимающегося.</span>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<a class="principing-text"><span class="spanh1" style="font-size: 40px;" onclick="Openslider('modal','in')">BUY NOW</span></a>
+			</div>
+			<div class="our-principing-img">
+				<div class="principing-img" style="background-image: url(mt-1821-img12.jpg)">
+					<div class="principing-img-text">
+						<span class="spanh1" style="text-align: left;">ДЛЯ ДЕВУШЕК</span>
+						<span class="spanh2" style="color: #d7272a;font-size: 26px;font-style: italic;text-align: left;">ЕЖЕМЕСЯЧНАЯ ОПЛАТА</span>
+						<span class="spanh2" style="text-align: left;color: white;">Независимо от того, посещаете ли вы до нас занятия  фитнесом, мы поможем улучшить ваше здоровье и самочувствие в нашем фитнес клубе. Будьте то девушкой, которая побуждает всех остальных стараться чуть сильнее.</span>
+						<span class="spanh2" style="text-align: left;color: white; font-weight: bold;margin-top: 25px;">Мы предлагаем различные программы по конкурентоспособной цене:</span>
+						<ol>
+							<li>
+								<span class="spanh2" style="color: white;">Повысьте гибкость суставов и мышц с нашими занятиями.</span>
+							</li>
+							<li>
+								<span class="spanh2" style="color: white;">Наслаждайтесь проверенными тренировками, чтобы расширить свои возможности.</span>
+							</li>
+							<li>
+								<span class="spanh2" style="color: white;">У нас есть проверенный временем подход для каждого занимающегося.</span>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<a class="principing-text"><span class="spanh1" style="font-size: 40px;" onclick="Openslider('modal','in')">BUY NOW</span></a>
+			</div>
+		</div>
+	</div>
+	<div class="question">
+		<div class="q-container">
+			<div class="q-text">
+				<p class="spanh1">Есть вопросы? Мы были бы рады помочь!</p>
+				<p class="spanh2" style="color: white; text-align: -webkit-auto;">Мы всегда сможем вас проконсультировать и помочь с вопросами</p>
+			</div>
+			<div class="q-button">
+				<a><span  class="q-span-button" onclick="Openslider('modal','in')">Записаться</span></a>
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="footer">
+		<div class="form-footer">
+			<p class="spanh1">Связаться</p>
+			<p class="spanh2">Какие бы у вас ни были вопросы не стесняйтесь связаться с нами</p>
+			<form action="https://formspree.io/mbjzozra" method="POST">
+				<input type="text" name="ФИО" placeholder="ФИО *" class="form-field">
+				<input type="text" name="Телефон" placeholder="Телефон *" class="form-field">
+				<textarea name="Вопрос" placeholder="Ваш вопрос *" style="margin-bottom: 35px;" class="form-field" id="" cols="30" rows="6"></textarea>
+				<button type="submit" class="footer-button">Отправить</button>
+			</form>	
+		</div>
+		<div style="width: 20%; height: 100%;"></div>
+		<div class="contact-footer"></div>
+	</div>
+	<div style="height: 10vh; background-color: black;"></div>
+	<div class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content modal-title">
+				<p class="spanh1 f60"style="color: white;">Записать на звонок</p>
+				<p class="spanh2" style="color: white;">Мы можем позвонить вам в течении 30 секунд после ввода телефона</p>
+				<form style="display: flex; flex-direction: column;" action="">
+					<input type="text" name="ФИО" placeholder="ФИО *" style="width: auto;background-color: #f1f1f1;" class="modal-field">
+					<input type="text" name="Телефон" placeholder="Телефон *" style="width: auto;background-color: #f1f1f1;" class="modal-field">
+					<textarea name="Вопрос" placeholder="Ваш вопрос *" style="width: auto;background-color: #f1f1f1;" class="modal-field" id="" cols="30" rows="6"></textarea>
+					<button type="submit" class="footer-button" style="margin-bottom: 10px;">Отправить</button>
+				</form>
+				<p onclick="Closeslider('modal','in')" style="color: white;font-size: 30px;cursor: pointer; position: absolute; top: -35px;right: 0;">×</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal-img fade"onclick="Closeslider('modal-img','in')">
+		<div class="modal-dialog-img">
+			<div class="modal-title" style="display: flex; justify-content: center;">
+				<img src="1/mt-1821-gallery-img02bg.jpg" width="50%" style="border: 5px solid black; cursor:pointer;" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/script.js"></script>
+</html>
